@@ -1,0 +1,20 @@
+.main {
+	display: block;
+}
+
+.main h1 {
+	padding-top: 40px;
+	text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+	.main {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 5fr;
+	}
+
+	.main h1 {
+		text-align: left;
+	}
+}

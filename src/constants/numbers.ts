@@ -1,0 +1,3 @@
+export const MAX_AMOUNT_ITEMS_TO_RENDER = 15;
+export const MAX_QUERY_LENGTH = 60;
+export const MOST_COMMON_ITEM_MAX_AMOUNT_LINES = 2;

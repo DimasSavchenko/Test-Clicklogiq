@@ -1,0 +1,15 @@
+.photos-page {
+	display: block;
+}
+
+@media screen and (min-width: 992px) {
+	.photos-page {
+		padding: 0;
+	}
+}
+
+.photos-page__buttons {
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 20px 20px 0;
+}

@@ -1,0 +1,19 @@
+.photos-collection-item {
+	display: grid;
+	grid-row-gap: 5px;
+	max-width: 150px;
+}
+
+.photos-collection-item__name {
+	height: 40px;
+	font-size: 16px;
+}
+
+.photos-collection-item__size {
+	color: rgb(0 0 0 / 0.5);
+	font-size: 16px;
+}
+
+.photos-collection-item__name--bold {
+	font-weight: 700;
+}
