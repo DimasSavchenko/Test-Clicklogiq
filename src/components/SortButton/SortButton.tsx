@@ -7,17 +7,21 @@ import { default as SortButtonModuleCss } from './SortButton.module.css';
 interface ISortButtonProps {
 	onSortChange: Function;
 	sortName: SortType;
+	selected: string;
 }
 
 const block = bemCssModules(SortButtonModuleCss);
 
-const SortButton = ({ onSortChange, sortName }: ISortButtonProps) => {
-	const handlerSortChange = (sortName: SortType) => {
+const SortButton = ({ onSortChange, sortName, selected }: ISortButtonProps) => {
+	const handlerSortChange = () => {
 		onSortChange(sortName);
 	};
 
 	return (
-		<button onClick={() => handlerSortChange(sortName)} className={block()}>
+		<button
+			onClick={handlerSortChange}
+			className={selected ? block({ selected: true }) : block()}
+		>
 			{sortName}
 		</button>
 	);

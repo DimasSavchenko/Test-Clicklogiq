@@ -39,11 +39,20 @@ const PhotosPage: React.FC = () => {
 		<div className={block()}>
 			<h1>Photos</h1>
 			<div className={block('buttons')}>
-				<SortButton onSortChange={handlerSortChange} sortName={SortType.Name} />
-				<SortButton onSortChange={handlerSortChange} sortName={SortType.Size} />
+				<SortButton
+					onSortChange={handlerSortChange}
+					sortName={SortType.Name}
+					selected={sortType === SortType.Name ? 'selected' : ''}
+				/>
+				<SortButton
+					onSortChange={handlerSortChange}
+					sortName={SortType.Size}
+					selected={sortType === SortType.Size ? 'selected' : ''}
+				/>
 				<SortButton
 					onSortChange={handlerSortChange}
 					sortName={SortType.Modified}
+					selected={sortType === SortType.Modified ? 'selected' : ''}
 				/>
 			</div>
 			<PhotosCollection
